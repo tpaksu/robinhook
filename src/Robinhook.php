@@ -31,7 +31,7 @@ class Robinhook
             $wsClient->close();
             return ["[accepted]"];
         });
-        $this->router->map("GET", "/",  function(){
+        $this->router->map("GET", "/", function () {
             return [
                 "welcome to tpaksu's personal webhook redirector (robinhook)"
             ];
