@@ -1,9 +1,9 @@
 <?php
-use Tpaksu\Robinhook\Webhooks;
+use Tpaksu\Robinhook\Websocket;
 
 require 'vendor/autoload.php';
 
-$server = new Webhooks();
+$server = new Websocket();
 
 try {
     $server->startServer(5501);

@@ -26,7 +26,7 @@ class Robinhook
         $this->router->map('POST', '/webhook', function (
             ServerRequestInterface $request
         ): array {
-            $wsClient = new Client('wss://nox.ist:7070');
+            $wsClient = new Client('ws://0.0.0.0:5501');
             $wsClient->send(json_encode(\Laminas\Diactoros\Request\ArraySerializer::toArray($request)));
             $wsClient->close();
             return ["[accepted]"];

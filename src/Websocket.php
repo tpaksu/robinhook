@@ -9,7 +9,7 @@ use Ratchet\WebSocket\MessageComponentInterface;
 use Ratchet\WebSocket\WsServer;
 use SplObjectStorage;
 
-class Webhooks implements MessageComponentInterface
+class Websocket implements MessageComponentInterface
 {
     protected $clients;
 
