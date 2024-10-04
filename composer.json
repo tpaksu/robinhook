@@ -1,0 +1,23 @@
+{
+    "name": "tpaksu/robinhook",
+    "description": "A simple webhook redirection system",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Tpaksu\\Robinhook\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Taha Paksu",
+            "email": "3295+tpaksu@users.noreply.github.com"
+        }
+    ],
+    "require": {
+        "league/route": "^5.1",
+        "laminas/laminas-diactoros": "^3.4",
+        "laminas/laminas-httphandlerrunner": "^2.10",
+        "cboden/ratchet": "^0.4.4",
+        "textalk/websocket": "^1.6"
+    }
+}
